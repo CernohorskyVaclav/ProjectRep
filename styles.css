@@ -93,17 +93,18 @@ body {
 
  */
 .konec {
-  padding: 15%
+  padding: 0%
+
 }
 .konec li a {
-  margin-top: 15%;
+  margin-top: 20%;
   text-align: center;
-  padding: 20%;
+  background-color: #666;
+  border: solid #555 medium;
 }
 
 .konec li a:hover {
-    background-color: #FF0000;
-    color: white;
+    border-color: #444;
 }
 /* Middle column
 
@@ -196,6 +197,50 @@ body {
 	background: white;
 }
 
+/* languages buttons */
+.languages ul {
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+    background-color: #ccc;
+}
+
+.languages li {
+    float: left;
+}
+
+.languages li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.languages li a:hover {
+    background-color: #000;
+}
+.languages .cz a:hover {
+    border: solid #0000FF medium;
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
+.languages .eng a:hover {
+    border: solid #FF0000 medium;
+    background-color: #0000FF;
+    color: #FFFFFF;
+}
+.languages .kor a:hover {
+    border: solid #000000 medium;
+    background-color: #0000FF;
+    color: #FFFFFF;
+}
+.languages .ru a:hover {
+    border: solid #FFFF00 medium;
+    background-color: #FF0000;
+    color: #FFFFFF;
+}
 
 
 
