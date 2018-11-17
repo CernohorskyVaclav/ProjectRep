@@ -232,9 +232,9 @@ body {
     color: #FFFFFF;
 }
 .languages .kor a:hover {
-    border: solid #000000 medium;
-    background-color: #0000FF;
-    color: #FFFFFF;
+    border: solid #0000FF medium;
+    background-color: #FFFFFF;
+    color: #FF0000;
 }
 .languages .ru a:hover {
     border: solid #FFFF00 medium;
