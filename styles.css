@@ -237,9 +237,9 @@ body {
     color: #FF0000;
 }
 .languages .ru a:hover {
-    border: solid #FFFF00 medium;
-    background-color: #FF0000;
-    color: #FFFFFF;
+    border: solid #FF0000 medium;
+    background-color: #FFFFFF;
+    color: #0000FF;
 }
 
 
