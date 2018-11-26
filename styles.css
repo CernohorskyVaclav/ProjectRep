@@ -20,7 +20,7 @@ body {
     padding: 0;
     padding-left: 15%;
     overflow: hidden;
-    background-color: #666;
+    background-color: #000d2f;
 }
 
 .header li {
@@ -37,7 +37,7 @@ body {
 
 /* Change the link color to #111 (black) on hover */
 .header li a:hover {
-    background-color: #444;
+    background-color: #003459;
 }
 
 /* Container for flexboxes */
@@ -70,7 +70,7 @@ body {
     margin: 0;
     padding: 0;
     width: fill;
-    background-color: #888;
+    background-color: #3a5d86;
 }
 
 .column.side li a {
@@ -82,7 +82,7 @@ body {
 
 /* Change the link color on hover */
 .column.side li a:hover {
-    background-color: #555;
+    background-color: #000d2f;
     color: white;
 }
 
@@ -203,7 +203,7 @@ body {
     margin: 0%;
     padding: 0%;
     overflow: hidden;
-    background-color: #ccc;
+    background-color: #3a5d86;
 }
 
 .languages li {
@@ -216,6 +216,7 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border: solid rgba(0, 0, 0, 0) medium;
 }
 
 .languages li a:hover {
@@ -225,6 +226,7 @@ body {
     border: solid #0000FF medium;
     background-color: #FF0000;
     color: #FFFFFF;
+
 }
 .languages .eng a:hover {
     border: solid #FF0000 medium;
