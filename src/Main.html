@@ -57,14 +57,14 @@
               <form class="col s12">
                 <div class="row">
                   <div class="input-field col s12 m6">
-                    <input placeholder="Zadej Otazku" class="blue-grey-text" id="otazka" type="text">
+                    <input placeholder="Zadej Otazku" class="validate" id="otazka" type="text">
                     <label for="otazka">Otazka</label>
                   </div>
                   <div class="input-field col s12 m6">
-                    <input placeholder="Zadej Odpoved" id="odpoved" type="text">
+                    <input placeholder="Zadej Odpoved" class="validate" id="odpoved" type="text">
                     <label for="odpoved">Odpoved</label>
                   </div>
-                  <a class="waves-effect waves-light btn-large grey darken-4">Odeslat</a>
+                  <button class="btn-large waves-effect waves-light grey darken-4" type="submit" id="submit-button" name="action">Odeslat</button>
                 </div>
               </form>
             </div>
@@ -91,14 +91,28 @@
 
 
   <!-- script -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
     $(document).ready(function () {
       $('.tabs').tabs();
     });
+
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCLOHfqT9I1BF_AdHQ6nl4bPyu6mBtJySI",
+      authDomain: "the-quiz-5abe8.firebaseapp.com",
+      databaseURL: "https://the-quiz-5abe8.firebaseio.com",
+      projectId: "the-quiz-5abe8",
+      storageBucket: "the-quiz-5abe8.appspot.com",
+      messagingSenderId: "1081235782554"
+    };
+    firebase.initializeApp(config);
+    const db = firebase.firestore();
   </script>
+  <script src="./js/javascript.js"></script>
   <!-- niz nic -->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/materialize.js"></script>
 </body>
 
 </html>
