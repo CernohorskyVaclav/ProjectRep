@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
 
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase-firestore.js"></script>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
@@ -54,7 +56,7 @@
           <!-- nabidky otazek -->
           <div id="nabidky-tab">
             <div class="row">
-              <form class="col s12">
+              <form id="add-requests-form" class="col s12">
                 <div class="row">
                   <div class="input-field col s12 m6">
                     <input placeholder="Zadej Otazku" class="validate" id="otazka" type="text">
@@ -64,7 +66,8 @@
                     <input placeholder="Zadej Odpoved" class="validate" id="odpoved" type="text">
                     <label for="odpoved">Odpoved</label>
                   </div>
-                  <button class="btn-large waves-effect waves-light grey darken-4" type="submit" id="submit-button" name="action">Odeslat</button>
+                  <button class="btn-large waves-effect waves-light grey darken-4" type="submit" id="submit-button"
+                    name="action">Odeslat</button>
                 </div>
               </form>
             </div>

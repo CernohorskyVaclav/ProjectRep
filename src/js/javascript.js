@@ -1,8 +1,7 @@
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    var elem = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems);
+
 
     // db.collection('Requests').orderBy('name').onSnapshot(snapshot => {
 
