@@ -30,24 +30,37 @@
                     <div class="row">
                         <form id="add-requests-form" class="col s12">
                             <div class="row">
-                                <div class="input-field col s12 m6">
-                                    <input placeholder="Zadej Otazku" class="validate" id="otazka" type="text">
-                                    <label for="otazka">Otazka</label>
+                                <div class="col s12 m6">
+                                    <div class="input-field">
+                                        <input class="validate" id="otazka" type="text">
+                                        <label for="otazka">Otazka</label>
+                                    </div>
+                                    <!-- placeholder="Zadej Otazku" -->
                                     <button class="btn-large waves-effect waves-light grey darken-4" type="submit"
-                                        id="submit-button" name="action">Odeslat</button>
+                                        id="submit-button" name="action" href="./hra">Odeslat</button>
                                 </div>
-                                <div class="input-field col s12 m6">
-                                    <!-- Správná odpověď -->
-                                    <input placeholder="Zadej spravnou odpoved" class="validate" id="spravnaOdpoved"
-                                        type="text">
-                                    <label for="spravnaOdpoved">Odpovedi</label>
+                                
+                                <div class="col s12 m6">
+                                    <div class="input-field">
+                                        <!-- Správná odpověď -->
+                                        <input class="validate" id="spravnaOdpoved" type="text">
+                                        <label for="spravnaOdpoved">Zadej spravnou odpoved</label>
+                                    </div>
                                     <!-- Špatné odpovědi -->
-                                    <input placeholder="Zadej prvni spatnou odpoved" class="validate"
-                                        id="spatnaOdpoved1" type="text">
-                                    <input placeholder="Zadej druhou spatnou odpoved" class="validate"
-                                        id="spatnaOdpoved2" type="text">
-                                    <input placeholder="Zadej treti spatnou odpoved" class="validate"
-                                        id="spatnaOdpoved3" type="text">
+                                    <div class="input-field">
+                                        <input class="validate" id="spatnaOdpoved1" type="text">
+                                        <label for="spravnaOdpoved">Zadej prvni spatnou odpoved</label>
+                                    </div>
+                                    
+                                    <div class="input-field">
+                                        <input class="validate" id="spatnaOdpoved2" type="text">
+                                        <label for="spravnaOdpoved">Zadej druhou spatnou odpoved</label>
+                                    </div>
+                                    <div class="input-field">
+                                        <input class="validate" id="spatnaOdpoved3" type="text">
+                                        <label for="spravnaOdpoved">Zadej treti spatnou odpoved</label>
+                                    </div>
+
                                     <p class="grey-text">Nemusíte zadávat špatné odpovědi</p>
                                 </div>
                             </div>

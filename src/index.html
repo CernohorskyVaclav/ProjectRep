@@ -51,9 +51,7 @@
   <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script>
-    $(document).ready(function () {
-      $('.tabs').tabs();
-    });
+
 
     // Initialize Firebase
     var config = {
@@ -67,22 +65,9 @@
     firebase.initializeApp(config);
     const db = firebase.firestore();
   </script>
-  <script>
-    page.base('/src');
+  <!-- <script>
 
-    page('/', home);
-    page('/hra', hra);
-    page('*', home);
-    page();
-    function home() {
-      $('#content').load('homepage.html');
-    }
-    function hra() {
-      console.log('hra');
-      $('#content').text("loading");
-      $('#content').load('hra.html');
-    }
-  </script>
+  </script> -->
   <script src="./js/javascript.js"></script>
   <!-- niz nic -->
   <script type="text/javascript" src="js/materialize.js"></script>
