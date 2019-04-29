@@ -39,6 +39,10 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log('hra');
         $('#content').text("loading");
         $('#content').load('hra.html');
+        
+        $(document).ready(function () {
+            $('.tabs').tabs();
+        });
     }
 
     // db.collection('Requests').orderBy('name').onSnapshot(snapshot => {
