@@ -1,3 +1,6 @@
+/* body{
+  min-height: 100vh;
+} */
 .input-field input:focus + label {
   color: #1976d2 !important;
 }
