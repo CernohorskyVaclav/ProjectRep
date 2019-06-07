@@ -1,78 +1,83 @@
 <!-- nadpis a info -->
-<div class="container" id="index-banner" style="padding: 5em;">
-    <div class="row">
-        <div class="col s12 m6 right-align">
-            <h1 style="font-size: 8em;">The<br>Quiz</h1>
-        </div>
-        <div class="col s12 m6">
-            <h2>Info</h2>
-            <p class="flow-text">Hra, ve které můžete otestovat své znalosti, a porovnávat je s ostatními. Ve hře vám
-                bude položeno 10 otázek, vy na ně odpovíte, a pak se vám ukáže vaše skóre. Do hry můžete také přidávat
-                své otázky.
-            </p><a class="waves-effect waves-light btn-large grey darken-4">Play</a>
+<div class="mainDiv">
+    <div class="container" id="index-banner" style="padding: 5em;">
+        <div class="row">
+            <div class="col s12 m6 right-align">
+                <h1 style="font-size: 8em;">The<br>Quiz</h1>
+            </div>
+            <div class="col s12 m6">
+                <h2>Info</h2>
+                <p class="flow-text">Hra, ve které můžete otestovat své znalosti, a porovnávat je s ostatními. Ve hře
+                    vám
+                    bude položeno 10 otázek, vy na ně odpovíte, a pak se vám ukáže vaše skóre. Do hry můžete také
+                    přidávat
+                    své otázky.
+                </p><a class="waves-effect waves-light btn-large grey darken-4">Play</a>
+            </div>
         </div>
     </div>
-</div>
 
-<!-- tabulka -->
-<div class="row " style="padding-top: 5em;">
-    <div class="col s12 m8 offset-m2">
-        <div class="card blue">
-            <div class="card-tabs">
-                <ul class="tabs tabs-fixed-width tabs-transparent">
-                    <li class="tab"><a href="#nabidky-tab">Nabidky Otazek</a></li>
-                    <li class="tab"><a href="#statiskika-tab">Statistika</a></li>
-                </ul>
-            </div>
-            <div class="card-content grey darken-4">
-                <!-- nabidky otazek -->
-                <div id="nabidky-tab">
-                    <div class="row">
-                        <form id="add-requests-form" class="col s12">
-                            <div class="row">
-                                <div class="col s12 m6">
-                                    <div class="input-field">
-                                        <input class="validate" id="otazka" type="text">
-                                        <label for="otazka">Otazka</label>
-                                    </div>
-                                    <!-- placeholder="Zadej Otazku" -->
-                                    <button class="btn-large waves-effect waves-light grey darken-4" type="submit"
-                                        id="submit-button" name="action" href="./hra">Odeslat</button>
-                                </div>
-
-                                <div class="col s12 m6">
-                                    <div class="input-field">
-                                        <!-- Správná odpověď -->
-                                        <input class="validate" id="spravnaOdpoved" type="text">
-                                        <label for="spravnaOdpoved">Zadej spravnou odpoved</label>
-                                    </div>
-                                    <!-- Špatné odpovědi -->
-                                    <div class="input-field">
-                                        <input class="validate" id="spatnaOdpoved1" type="text">
-                                        <label for="spravnaOdpoved">Zadej prvni spatnou odpoved</label>
-                                    </div>
-
-                                    <div class="input-field">
-                                        <input class="validate" id="spatnaOdpoved2" type="text">
-                                        <label for="spravnaOdpoved">Zadej druhou spatnou odpoved</label>
-                                    </div>
-                                    <div class="input-field">
-                                        <input class="validate" id="spatnaOdpoved3" type="text">
-                                        <label for="spravnaOdpoved">Zadej treti spatnou odpoved</label>
-                                    </div>
-
-                                    <p class="grey-text">Nemusíte zadávat špatné odpovědi</p>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+    <!-- tabulka -->
+    <div class="row " style="padding-top: 5em;">
+        <div class="col s12 m8 offset-m2">
+            <div class="card blue">
+                <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width tabs-transparent">
+                        <li class="tab"><a href="#nabidky-tab">Nabidky Otazek</a></li>
+                        <li class="tab"><a href="#statiskika-tab">Statistika</a></li>
+                    </ul>
                 </div>
-                <!-- statistika -->
-                <div id="statiskika-tab" class="white-text">Lorem ipsum, dolor sit amet consectetur adipisicing
-                    elit.
-                    Iusto sequi asperiores non harum odio consectetur quos! Ullam fuga, pariatur iusto esse optio sed
-                    dolor ad
-                    unde natus nemo hic eum.</div>
+                <div class="card-content grey darken-4">
+                    <!-- nabidky otazek -->
+                    <div id="nabidky-tab">
+                        <div class="row">
+                            <form id="add-requests-form" class="col s12">
+                                <div class="row">
+                                    <div class="col s12 m6">
+                                        <div class="input-field">
+                                            <input class="validate" id="otazka" type="text">
+                                            <label for="otazka">Otazka</label>
+                                        </div>
+                                        <!-- placeholder="Zadej Otazku" -->
+                                        <button class="btn-large waves-effect waves-light grey darken-4" type="submit"
+                                            id="submit-button" name="action" href="./hra">Odeslat</button>
+                                    </div>
+
+                                    <div class="col s12 m6">
+                                        <div class="input-field">
+                                            <!-- Správná odpověď -->
+                                            <input class="validate" id="spravnaOdpoved" type="text">
+                                            <label for="spravnaOdpoved">Zadej spravnou odpoved</label>
+                                        </div>
+                                        <!-- Špatné odpovědi -->
+                                        <div class="input-field">
+                                            <input class="validate" id="spatnaOdpoved1" type="text">
+                                            <label for="spravnaOdpoved">Zadej prvni spatnou odpoved</label>
+                                        </div>
+
+                                        <div class="input-field">
+                                            <input class="validate" id="spatnaOdpoved2" type="text">
+                                            <label for="spravnaOdpoved">Zadej druhou spatnou odpoved</label>
+                                        </div>
+                                        <div class="input-field">
+                                            <input class="validate" id="spatnaOdpoved3" type="text">
+                                            <label for="spravnaOdpoved">Zadej treti spatnou odpoved</label>
+                                        </div>
+
+                                        <p class="grey-text">Nemusíte zadávat špatné odpovědi</p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- statistika -->
+                    <div id="statiskika-tab" class="white-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit.
+                        Iusto sequi asperiores non harum odio consectetur quos! Ullam fuga, pariatur iusto esse optio
+                        sed
+                        dolor ad
+                        unde natus nemo hic eum.</div>
+                </div>
             </div>
         </div>
     </div>
