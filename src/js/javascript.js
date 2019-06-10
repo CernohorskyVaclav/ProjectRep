@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     page('/hra', hra);
     page('*', home);
     page();
+
     function home() {
         $('#content').load('homepage.html', function (responseTxt, statusTxt, xhr) {
             if (statusTxt == "success") {
@@ -41,14 +42,24 @@ document.addEventListener('DOMContentLoaded', function () {
                 $(document).ready(function () {
                     $('.tabs').tabs();
                 });
-
+                let questions = [];
                 // const form = document.getElementById('add-student-form');
                 db.collection('requests').limit(5).get().then((snapshot) => {
                     snapshot.docs.forEach(doc => {
-                        console.log(doc.data());
+                        //console.log(doc.data());
+                        questions.push(doc.data());
                     });
                     // console.log(doc.data());
-                }); 
+                });
+                console.log(questions);
+                let otazky = document.getElementById("otazky");
+                console.log(otazky);
+                questions.forEach(function (e, index) {
+                    console.log(questions);
+                });
+
+
+
 
                 // const form = document.getElementById('add-requests-form');
 
@@ -74,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // console.log('hra');
         // $('#content').text("loading");
         // $('#content').load('hra.html');
-        
+
         // $(document).ready(function () {
         //     $('.tabs').tabs();
         // });
